@@ -77,3 +77,17 @@ footer {
   padding: 1rem;
   margin-top: 3rem;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* cambia a row si quieres logo y texto en la misma línea */
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 80px;      /* ajusta el tamaño del logo */
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
