@@ -160,11 +160,12 @@ footer {
 }
 
 .footer-logo {
-  width: 50px;      /* tamaño más pequeño */
+  width: 80px;      /* tamaño más pequeño */
   height: auto;
   margin-right: 10px; /* espacio entre logo y texto si los pones en la misma línea */
   vertical-align: middle; /* centra el logo con el texto */
 }
+
 
 
 
