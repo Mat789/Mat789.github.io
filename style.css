@@ -57,18 +57,51 @@ ul {
   padding-left: 1.5rem;
 }
 
-.speaker {
-  display: inline-block;
+#speakers {
+  margin: 2rem auto;
+  max-width: 900px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#speakers h2 {
   text-align: center;
-  margin: 1rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.speaker {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .speaker img {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+.speaker-info {
+  flex: 1;
+  text-align: left;
+}
+
+.speaker-info strong {
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.bio {
+  text-align: justify;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: #333;
+}
+
 
 footer {
   background: #003366;
@@ -91,6 +124,7 @@ footer {
   margin-right: 10px; /* espacio entre logo y texto si los pones en la misma línea */
   vertical-align: middle; /* centra el logo con el texto */
 }
+
 
 
 
