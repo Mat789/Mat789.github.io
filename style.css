@@ -136,6 +136,13 @@ details[open] .bio {
   to { opacity: 1; }
 }
 
+/* Resaltar código en rojo y mantenerlo en una sola línea */
+.highlight-code {
+  color: red;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 
 footer {
   background: #003366;
@@ -158,6 +165,7 @@ footer {
   margin-right: 10px; /* espacio entre logo y texto si los pones en la misma línea */
   vertical-align: middle; /* centra el logo con el texto */
 }
+
 
 
 
