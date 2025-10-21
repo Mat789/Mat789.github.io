@@ -1,3 +1,4 @@
+/* === General Body === */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* === Header === */
 header {
   background: #003366;
   color: white;
@@ -33,17 +35,19 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* === Main Content === */
 main {
   padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+  margin: 0;              /* ocupar todo el ancho */
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  border-radius: 0;       /* opcional para que llegue al borde */
 }
 
+/* === Sections === */
 section {
   margin-bottom: 2rem;
+  padding: 1rem 2rem;
 }
 
 section h2 {
@@ -57,10 +61,9 @@ ul {
   padding-left: 1.5rem;
 }
 
-/* === General Section === */
+/* === Speakers Section === */
 #speakers {
-  margin: 2rem auto;
-  max-width: 900px;
+  margin: 2rem 0;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -70,7 +73,7 @@ ul {
   color: #222;
 }
 
-/* === Speaker Layout === */
+/* Speaker Layout */
 .speaker {
   display: flex;
   align-items: flex-start;
@@ -126,7 +129,6 @@ ul {
   margin: 0.5rem 0;
 }
 
-/* Optional: subtle animation */
 details[open] .bio {
   animation: fadeIn 0.4s ease;
 }
@@ -136,14 +138,14 @@ details[open] .bio {
   to { opacity: 1; }
 }
 
-/* Resaltar código en rojo y mantenerlo en una sola línea */
+/* === Highlight Code === */
 .highlight-code {
   color: red;
   font-weight: bold;
   white-space: nowrap;
 }
 
-
+/* === Footer === */
 footer {
   background: #003366;
   color: white;
@@ -154,20 +156,30 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* cambia a row si quieres logo y texto en la misma línea */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
 }
 
 .footer-logo {
-  width: 80px;      /* tamaño más pequeño */
+  width: 80px;      
   height: auto;
-  margin-right: 10px; /* espacio entre logo y texto si los pones en la misma línea */
-  vertical-align: middle; /* centra el logo con el texto */
+  margin-right: 10px; 
+  vertical-align: middle; 
 }
 
+/* === Call to Action Links === */
+a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
 
-
+a:hover {
+  color: #0078d7;
+  text-decoration: underline;
+}
 
 
 
